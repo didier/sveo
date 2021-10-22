@@ -26,11 +26,12 @@ const metadata = await sveo(page)
 
   export const load = async ({ page }) => {
     // The metadata from the page component
-    const { title } = await sveo(page)
+    const { title, description } = await sveo(page)
 
     return {
       props: {
-        title
+        title,
+        description
       }
     }
   }
@@ -40,13 +41,24 @@ const metadata = await sveo(page)
 Then, in your markup, you can use the `title` property as you please.
 
 ```svelte
-<!-- __layout.svelte -->
+<!-- __layout[.reset].svelte -->
 
 <script>
   export let title
+  export let description
 </script>
 
 <h1>{title}</h1>
+<p>{description}</p>
+```
+
+Finally, you can define metadata in your route's `<script module="context">`:
+
+```svelte
+<script module="context">
+  export const title = 'Hello world'
+  export const description = 'Have a wonderful day.'
+</script>
 ```
 
 ### Options
