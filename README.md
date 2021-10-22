@@ -72,6 +72,7 @@ Finally, you can define metadata in your route's `<script module="context">`:
 While using the `metadata` function is a nice way to grab data from your page components, `sveo` also comes with a more full-fledged component that automatically templates your SEO stuff like meta tags, page titles, Twitter cards, etc.
 
 ```svelte
+<!-- __layout[.reset].svelte -->
 <script context="module">
   import { metadata } from '@didiercatz/sveo'
 
