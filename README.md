@@ -2,8 +2,9 @@
 
 Dependency-free approach to declare metadata on SvelteKit pages — for example for SEO.
 
+- Enables you to pass data from page components to `__layout.svelte`
 - :white_check_mark: Works with MDSveX out of the box.
--
+- `Sveo` component for easy templating of meta tags, Twitter cards, OpenGraph, etc.
 
 ## Getting started
 
@@ -70,7 +71,7 @@ Finally, you can define metadata in your route's `<script module="context">`:
 
 While using the `metadata` function is a nice way to grab data from your page components, `sveo` also comes with a more full-fledged component that automatically templates your SEO stuff like meta tags, page titles, Twitter cards, etc.
 
-```
+```svelte
 <script context="module">
   import { metadata } from '@didiercatz/sveo'
 
