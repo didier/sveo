@@ -98,9 +98,9 @@ While using the `metadata` function is a nice way to grab data from your page co
 
 ### Options
 
-| `options` | default            | Purpose                                     |
-| --------- | ------------------ | ------------------------------------------- |
-| `routes`  | `../../src/routes` | The folder containing your SvelteKit routes |
+| `options` | default      | Purpose                                     |
+| --------- | ------------ | ------------------------------------------- |
+| `routes`  | `src/routes` | The folder containing your SvelteKit routes |
 
 ## License
 
