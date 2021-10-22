@@ -1,5 +1,5 @@
 <script context="module">
-	import sveo from '$lib/sveo'
+	import sveo from '$lib'
 
 	export const load = async ({ page }) => {
 		const { title } = await sveo(page)

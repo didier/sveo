@@ -50,3 +50,11 @@ Then, in your markup, you can use the `title` property as you please.
 ```
 
 ### Options
+
+| `options` | default            | Purpose                                     |
+| --------- | ------------------ | ------------------------------------------- |
+| `routes`  | `../../src/routes` | The folder containing your SvelteKit routes |
+
+## License
+
+[MIT](https://github.com/didier/sveo/blob/main/LICENSE)
