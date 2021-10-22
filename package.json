@@ -1,6 +1,6 @@
 {
 	"name": "@didiercatz/sveo",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"license": "MIT",
 	"scripts": {
 		"dev": "svelte-kit dev",
@@ -12,7 +12,7 @@
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
-		"@didiercatz/sveo": "^0.1.0",
+		"@didiercatz/sveo": "^0.1.1",
 		"@sveltejs/adapter-netlify": "^1.0.0-next.34",
 		"@sveltejs/kit": "^1.0.0-next.188",
 		"autoprefixer": "^10.3.7",

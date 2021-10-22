@@ -1,3 +1,4 @@
+// TODO: Try to use Vite (or any other approach) to resolve files, as path and fs aren't supported client-side and may cause issues on CSR.
 import path from 'path'
 import fs from 'fs'
 

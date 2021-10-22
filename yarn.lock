@@ -23,10 +23,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@didiercatz/sveo@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@didiercatz/sveo/-/sveo-0.1.0.tgz#ae4707255d0c6fbf544525b470b0f4624a949a4b"
-  integrity sha512-B3h/kdPfHeoBzwCPz66A1/S00FQ3RBPjVrW4nqGV6Tkswz0ktWykhrX7yp04eJOCtvX6FDkzDipPC1UZ425org==
+"@didiercatz/sveo@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@didiercatz/sveo/-/sveo-0.1.1.tgz#b7a8fabfd8cbc84159d0e855c4b1eec87a0f74b5"
+  integrity sha512-LV9WJLB08ZtENnWORJPIHuHyQXiuCj1stbXTsm4XZz26bWtdgkruvqbo5eqJJDuTDJKMrUYzGnm40i1whbvqEw==
 
 "@eslint/eslintrc@^1.0.3":
   version "1.0.3"

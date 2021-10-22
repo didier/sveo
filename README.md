@@ -14,6 +14,8 @@ Dependency-free approach to declare metadata on SvelteKit pages — for example 
 npm i -D @didiercatz/sveo
 ```
 
+###### I really wanted to get `sveo`, but according to npm, that's too similar to `svgo`. :man_shrugging:
+
 ### Using
 
 Using Sveo is quite simple. Create (or edit) a `__layout.svelte` inside your `routes` folder.
