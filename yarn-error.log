@@ -1,0 +1,45 @@
+Arguments: 
+  /Users/didier/.nvm/versions/node/v16.4.1/bin/node /usr/local/Cellar/yarn/1.22.5/libexec/bin/yarn.js
+
+PATH: 
+  /Users/didier/Library/pnpm:/Users/didier/perl5/bin:/Users/didier/.netlify/helper/bin:/Users/didier/.deno/bin:/Users/didier/.nvm/versions/node/v16.4.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/usr/local/MacGPG2/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin:/Users/didier/Library/pnpm:/Users/didier/perl5/bin:/Users/didier/.netlify/helper/bin:/Users/didier/.deno/bin:/Users/didier/.nvm/versions/node/v16.4.1/bin:/Users/didier/.cargo/bin:/Users/didier/.fig/bin:/Users/didier/.composer/vendor/bin:/Users/didier/.composer/vendor/bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  16.4.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/Users/didier/Library/Caches/Yarn/v6/npm-picocolors-0.2.1-570670f793646851d1ba135996962abad587859f-integrity/node_modules/picocolors/package.json' -> '/Users/didier/Projects/Experiments/portfolio-2022/node_modules/autoprefixer/node_modules/picocolors/package.json'
+
+npm manifest: 
+  {
+  	"name": "portfolio-2022",
+  	"version": "0.0.1",
+  	"scripts": {
+  		"dev": "svelte-kit dev",
+  		"build": "svelte-kit build",
+  		"preview": "svelte-kit preview"
+  	},
+  	"devDependencies": {
+  		"@sveltejs/kit": "next",
+  		"svelte": "^3.42.6",
+  		"postcss": "^8.3.9",
+  		"postcss-load-config": "^3.1.0",
+  		"svelte-preprocess": "^4.9.8",
+  		"autoprefixer": "^10.3.7",
+  		"cssnano": "^5.0.8",
+  		"tailwindcss": "^2.2.16"
+  	},
+  	"type": "module"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
