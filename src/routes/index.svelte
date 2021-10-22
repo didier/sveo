@@ -1,6 +1,7 @@
 <script context="module">
-	export const title = 'This is the homepage'
-	export const description = 'Woah amazing'
+	export const metadata = {
+		title: 'A dependency-free approach to declare metadata on SvelteKit pages'
+	}
 </script>
 
-<h1>Hello world</h1>
+<h1 class="text-6xl">SVEO is a dependency-free approach to declaring metadata within SvelteKit.</h1>

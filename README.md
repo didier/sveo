@@ -1,6 +1,9 @@
 # SVEO
 
-Depndency-free approach to declare metadata on SvelteKit pages — for example for SEO.
+Dependency-free approach to declare metadata on SvelteKit pages — for example for SEO.
+
+- :white_check_mark: Works with MDSveX out of the box.
+-
 
 ## Getting started
 
@@ -15,18 +18,18 @@ npm i -D @didiercatz/sveo
 Using Sveo is quite simple. Create (or edit) a `__layout.svelte` inside your `routes` folder.
 
 ```js
-import sveo from '@didiercatz/sveo'
+import { metadata } from '@didiercatz/sveo'
 
-const metadata = await sveo(page)
+const seo = await metadata(page)
 ```
 
 ```svelte
 <script context="module">
-  import sveo from '@didiercatz/sveo'
+  import { metadata } from '@didiercatz/sveo'
 
   export const load = async ({ page }) => {
     // The metadata from the page component
-    const { title, description } = await sveo(page)
+    const { title, description } = await metadata(page)
 
     return {
       props: {
@@ -56,9 +59,39 @@ Finally, you can define metadata in your route's `<script module="context">`:
 
 ```svelte
 <script module="context">
-  export const title = 'Hello world'
-  export const description = 'Have a wonderful day.'
+  export const metadata = {
+    title: 'Hello world',
+    description: 'Have a wonderful day.'
+  }
 </script>
+```
+
+### Sveo component
+
+While using the `metadata` function is a nice way to grab data from your page components, `sveo` also comes with a more full-fledged component that automatically templates your SEO stuff like meta tags, page titles, Twitter cards, etc.
+
+```
+<script context="module">
+  import { metadata } from '@didiercatz/sveo'
+
+  export const load = async ({ page }) => {
+    const seo = await metadata(page)
+
+    return {
+      props: { seo }
+    }
+  }
+</script>
+
+<script>
+  import Sveo from '@didiercatz/sveo'
+
+  export let seo = {
+    // You could even fill in some defaults here.
+  }
+</script>
+
+<Sveo {seo}/>
 ```
 
 ### Options
