@@ -1,0 +1,1 @@
+export { getFilePath } from './getFilePath'
