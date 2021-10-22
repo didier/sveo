@@ -1,6 +1,6 @@
 # SVEO
 
-Declare metadata on SvelteKit pages, for example for SEO.
+Depndency-free approach to declare metadata on SvelteKit pages — for example for SEO.
 
 ## Getting started
 
