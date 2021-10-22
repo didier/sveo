@@ -1,6 +1,6 @@
 <script context="module">
-	import { metadata } from '@didiercatz/sveo'
-	// import { metadata } from '$lib'
+	// import { metadata } from '@didiercatz/sveo'
+	import { metadata } from '$lib'
 
 	export const load = async ({ page }) => {
 		const seo = await metadata(page, {

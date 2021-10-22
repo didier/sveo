@@ -7,7 +7,7 @@ import { getFilePath } from '$lib/utils'
  */
 export async function metadata(page, config = {}) {
 	const options = {
-		routes: config.routes || 'src/routes',
+		routes: config.routes || '..',
 		extensions: config.extensions || ['.svelte', '.md', '.svx']
 	}
 
@@ -15,7 +15,8 @@ export async function metadata(page, config = {}) {
 	const route = page.path.split('/')[1] || 'index'
 
 	// Import the source file for the route
-	let source = await getFilePath(options, route)
+	const url = new URL(options.routes, import.meta.url)
+	let source = await getFilePath(options, route, url.pathname)
 
 	// Clone the module
 	let module = { ...source.metadata }
