@@ -1,33 +1,36 @@
 {
-  "name": "@didiercatz/sveo",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "preview": "svelte-kit preview",
-    "package": "svelte-kit package",
-    "publish": "npm publish package/ --access=public",
-    "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-    "format": "prettier --write --plugin-search-dir=. ."
-  },
-  "devDependencies": {
-    "@sveltejs/adapter-netlify": "^1.0.0-next.34",
-    "@sveltejs/kit": "^1.0.0-next.188",
-    "autoprefixer": "^10.3.7",
-    "cssnano": "^5.0.8",
-    "postcss": "^8.3.9",
-    "postcss-load-config": "^3.1.0",
-    "svelte": "^3.42.6",
-    "svelte-preprocess": "^4.9.8",
-    "svelte2tsx": "^0.4.7",
-    "tailwindcss": "^2.2.16",
-    "typescript": "^4.4.4"
-  },
-  "type": "module",
-  "keywords": [
-    "svelte",
-    "sveltekit",
-    "seo",
-    "keywords"
-  ]
+	"name": "@didiercatz/sveo",
+	"version": "0.0.2",
+	"license": "MIT",
+	"scripts": {
+		"dev": "svelte-kit dev",
+		"build": "svelte-kit build",
+		"preview": "svelte-kit preview",
+		"package": "svelte-kit package",
+		"publish": "npm publish package/ --access=public",
+		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+		"format": "prettier --write --plugin-search-dir=. ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-netlify": "^1.0.0-next.34",
+		"@sveltejs/kit": "^1.0.0-next.188",
+		"autoprefixer": "^10.3.7",
+		"cssnano": "^5.0.8",
+		"eslint": "^8.0.1",
+		"postcss": "^8.3.9",
+		"postcss-load-config": "^3.1.0",
+		"prettier": "^2.4.1",
+		"svelte": "^3.42.6",
+		"svelte-preprocess": "^4.9.8",
+		"svelte2tsx": "^0.4.7",
+		"tailwindcss": "^2.2.16",
+		"typescript": "^4.4.4"
+	},
+	"type": "module",
+	"keywords": [
+		"svelte",
+		"sveltekit",
+		"seo",
+		"keywords"
+	]
 }
