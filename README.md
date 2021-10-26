@@ -6,6 +6,8 @@ Dependency-free approach to declare metadata on SvelteKit pages — for example 
 - :white_check_mark: Works with MDSveX out of the box.
 - `Sveo` component for easy templating of meta tags, Twitter cards, OpenGraph, etc.
 
+###### Warning: This is not (yet) production-ready. It might not build at all. Use at your own discretion.
+
 ## Getting started
 
 ### Installing
